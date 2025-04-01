@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/PY/Scenes/Can'tStopTheRain.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
