@@ -87,8 +87,22 @@ public class Health : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         Debug.Log(other.tag);
-    }
+        if (other.CompareTag("rain"))
+        {
 
+               
+                   
+                    if (health > 0)
+                    {
+                        health -= .1f;
+                        healthBar.localScale = new Vector2(health, 1);
+                        size -= 0.07f;
+                        transform.localScale = new Vector2(size, size);
+                    }
+                
+            
+        }
+    }
 
     void TryAgain(){
         tryAgain.SetActive(true);
